@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-Hello, world!
+<div id="t"></div>
+<script>
+fetch("https://eouten960rwifpk.m.pipedream.net/")
+.then(() => fetch("https://dih.lat/blap.txt"))
+.then(r => r.text())
+.then(t => document.getElementById("t").textContent = t);
+</script>
 </body>
 </html>
